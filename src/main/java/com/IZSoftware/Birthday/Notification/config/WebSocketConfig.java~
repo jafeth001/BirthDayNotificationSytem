@@ -1,0 +1,4 @@
+package com.IZSoftware.Birthday.Notification.config;
+
+public class WebSocketConfig  {
+}
