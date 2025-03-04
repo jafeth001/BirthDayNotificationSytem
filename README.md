@@ -1,4 +1,4 @@
- Birthday Reminder System
+# Birthday Reminder System
 
 ## A Spring Boot application designed to manage users, departments, and send birthday notifications using RabbitMQ.
 
@@ -63,7 +63,7 @@ Access the RabbitMQ management console at http://localhost:15672 (username: gues
 mvn spring-boot:run
 
 ### Scheduler
-#####The application includes a scheduled task that checks for birthdays every hour and sends notifications to department members via RabbitMQ.
+#### The application includes a scheduled task that checks for birthdays every hour and sends notifications to department members via RabbitMQ.
 
 ### RabbitMQ Configuration
 #### 1 Queue: birthdayQueue
