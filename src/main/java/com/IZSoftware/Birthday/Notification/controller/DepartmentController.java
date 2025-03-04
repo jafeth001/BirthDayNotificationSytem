@@ -13,10 +13,6 @@ import java.util.List;
 public class DepartmentController {
     @Autowired
     private DepartmentService departmentService;
-//    @PostMapping
-//    public ResponseEntity<Department> addDepartment(@RequestBody Department department){
-//        return ResponseEntity.ok(departmentService.addDepartment(department));
-//    }
     @GetMapping
     public ResponseEntity<List<Department>> getAllDepartments(){
         return ResponseEntity.ok(departmentService.getAllDepartments());
