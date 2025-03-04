@@ -17,7 +17,7 @@ public class BirthdayScheduler {
     @Autowired
     private NotificationProducer notificationProducer;
 
-    @Scheduled(cron = "0 0 9 * * ?") // Runs every day at 9 AM
+    @Scheduled(fixedRate = 60 * 60 * 1000)
     public void checkBirthdays() {
         List<UserResponse> usersWithBirthday = userService.getUsersWithBirthdayToday();
         for (UserResponse user : usersWithBirthday) {

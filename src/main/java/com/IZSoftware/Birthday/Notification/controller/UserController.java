@@ -29,9 +29,4 @@ public class UserController {
     private ResponseEntity<List<UserResponse>> getUsersWithBirthdayToday() {
         return ResponseEntity.ok(userService.getUsersWithBirthdayToday());
     }
-    @PutMapping("/{userId}")
-    private ResponseEntity<User> updateUserBirthDay(@RequestBody UserResponse userResponse,
-                                                    @PathVariable("userId") Long userId) {
-        return ResponseEntity.ok(userService.updateUserBirthDay(userResponse,userId));
-    }
 }

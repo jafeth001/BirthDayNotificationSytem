@@ -37,10 +37,4 @@ public class UserService {
                 .map(UserToUserResponse::mapToUserResponse)
                 .collect(Collectors.toList());
     }
-
-    public User updateUserBirthDay(UserResponse userResponse, Long userId) {
-        var user = userRepository.findById(userId).orElseThrow();
-        user.setBirthday(userResponse.getBirthday());
-        return userRepository.save(user);
-    }
 }
